@@ -8,6 +8,7 @@
 #include <math.h>
 #include <time.h>
 #include<string>
+#include<vector>
 
 #include <gl\gl.h>
 #include <gl\glu.h>
@@ -41,7 +42,7 @@ multicast_net *multi_send;          //   -||-  wysylaniem komunikatow
 HANDLE threadReciv;                 // uchwyt w¹tku odbioru komunikatów
 extern HWND main_window;
 CRITICAL_SECTION m_cs;               // do synchronizacji wątków
-
+vector<int> parties;
 bool SHIFT_pressed = 0;
 bool CTRL_pressed = 0;
 bool ALT_pressed = 0;
@@ -58,17 +59,17 @@ int cursor_x, cursor_y;                         // polo¿enie kursora myszki w c
 extern float TransferSending(int ID_receiver, int transfer_type, float transfer_value);
 
 enum frame_types {
-	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER, INVITE
+	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER, INVITE, ACCEPTED_INVITE
 };
 
-enum transfer_types { MONEY, FUEL};
+enum transfer_types { MONEY, FUEL };
 
 struct Frame
 {
 	int iID;
 	int frame_type;
 	ObjectState state;
-	
+
 	int iID_receiver;      // nr ID adresata wiadomoœci (pozostali uczestnicy powinni wiadomoœæ zignorowaæ)
 
 	int item_number;     // nr przedmiotu, który zosta³ wziêty lub odzyskany
@@ -100,6 +101,25 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 
 		switch (frame.frame_type)
 		{
+			if (frame.team_number > 0) {
+				if (parties.size() > 0) {
+					bool party_exist = false;
+					for (int i = 0; i < parties.size(); i++) {
+						if (frame.team_number == parties[i]) {
+							party_exist = true;
+							break;
+						}
+					}
+					if (!party_exist) {
+						parties.push_back(frame.team_number);
+					}
+
+				}
+				else {
+					parties.push_back(frame.team_number);
+				}
+			}
+
 		case OBJECT_STATE:           // podstawowy typ ramki informuj¹cej o stanie obiektu              
 		{
 			state = frame.state;
@@ -134,7 +154,7 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					network_vehicles[frame.iID]->ChangeState(state);   // aktualizacja stanu obiektu obcego 	
 					terrain.InsertObjectIntoSectors(network_vehicles[frame.iID]);
 				}
-				
+
 			}
 			break;
 		}
@@ -187,11 +207,30 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 				msg += "Invite to party from " + to_string(frame.iID);
 				LPCSTR message = msg.c_str();
 
-				MessageBox(main_window, message, "Zaproszenie", MB_OK);
+				int result = MessageBox(NULL, message, "Zaproszenie", MB_OK);
+
+				if (result == 1) {
+					Frame frame_;
+					frame_.frame_type = ACCEPTED_INVITE;
+					frame_.iID = my_vehicle->iID;
+					frame_.iID_receiver = frame.iID;
+					frame.team_number = parties.size() + 1;
+					int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+				}
+
 			}
 			break;
 		}
-		
+		case ACCEPTED_INVITE:
+		{
+			if (frame.iID_receiver == my_vehicle->iID) {
+				//update party
+				my_vehicle->party_number = frame.team_number;
+
+			}
+				break;
+		}
+
 		} // switch po typach ramek
 		// Opuszczenie ścieżki krytycznej / Release the Critical section
 		LeaveCriticalSection(&m_cs);               // wyjście ze ścieżki krytycznej
@@ -224,7 +263,7 @@ void InteractionInitialisation()
 		(void *)multi_reciv,         // argument to thread function
 		0,                           // use default creation flags
 		&dwThreadId);                // returns the thread identifier
-		
+
 }
 
 
@@ -503,7 +542,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 					}
 				}
 			}
-		
+
 
 			// trzeba to przerobić na wersję sektorową, gdyż przedmiotów może być dużo!
 			// niestety nie jest to proste. 
@@ -585,7 +624,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 			float wheel_turn_angle = (float)(cursor_x - x) / 20;
 			if (wheel_turn_angle > 45) wheel_turn_angle = 45;
 			if (wheel_turn_angle < -45) wheel_turn_angle = -45;
-			my_vehicle->state.wheel_turn_angle = PI*wheel_turn_angle / 180;
+			my_vehicle->state.wheel_turn_angle = PI * wheel_turn_angle / 180;
 		}
 		break;
 	}
@@ -593,7 +632,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 	{
 		int zDelta = GET_WHEEL_DELTA_WPARAM(wParam);  // dodatni do przodu, ujemny do ty³u
 		//fprintf(f,"zDelta = %d\n",zDelta);          // zwykle +-120, jak siê bardzo szybko zakrêci to czasmi wyjdzie +-240
-		if (zDelta > 0){
+		if (zDelta > 0) {
 			if (par_view.distance > 0.5) par_view.distance /= 1.2;
 			else par_view.distance = 0;
 		}
@@ -769,7 +808,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 			}
 			break;
 		}
-		
+
 		case 'L':     // rozpoczęcie zaznaczania metodą lasso
 		{
 			L_pressed = true;
@@ -788,10 +827,10 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 				if (it->second)
 				{
 					MovableObject *ob = it->second;
-					if (min_dist >= (ob->state.vPos - my_vehicle->state.vPos).length) {
+					if (min_dist >= (ob->state.vPos - my_vehicle->state.vPos).length()) {
 						int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
 					}
-						
+
 				}
 			}
 			break;
@@ -927,7 +966,7 @@ LRESULT CALLBACK WndProc(HWND main_window, UINT message_type, WPARAM wParam, LPA
 			terrain_edition_mode = 1 - terrain_edition_mode;
 			if (terrain_edition_mode)
 				SetWindowText(main_window, "TRYB EDYCJI TERENU F2-SaveMapToFile, F1-pomoc");
-			else 
+			else
 				SetWindowText(main_window, "WYJSCIE Z TRYBU EDYCJI TERENU");
 			break;
 		}

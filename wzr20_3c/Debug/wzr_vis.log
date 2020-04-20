@@ -1,21 +1,4 @@
 ﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  vector3D.cpp
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(9): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(102): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(114): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(137): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(149): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(231): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(346): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(529): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(537): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(517): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\vector3d.cpp(554): warning C4101: 'b': unreferenced local variable
-  quaternion.cpp
-c:\users\amade\desktop\pg\wzr\wzr20_3c\quaternion.cpp(64): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\quaternion.cpp(97): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\quaternion.cpp(104): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   objects.cpp
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.h(6): warning C4091: 'extern ': ignored on left of 'Terrain' when no variable is declared
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(75): warning C4305: '=': truncation from 'double' to 'float'
@@ -48,139 +31,137 @@ c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(692): warning C4996: 'sprintf
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(798): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(807): warning C4305: 'initializing': truncation from 'double' to 'float'
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(817): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(881): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(963): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1047): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1067): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1250): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1265): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(884): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(966): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1050): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1070): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1253): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1268): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1269): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1272): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1306): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1309): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1386): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1389): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1444): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1447): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1451): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1454): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1480): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1488): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1498): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1499): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1569): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1570): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1578): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1592): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1651): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'Item *'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1706): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1483): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1491): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1501): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1502): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1572): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1573): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1581): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1595): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1654): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'Item *'
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1709): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1877): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1988): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'Item *'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2150): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'Item *'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2279): warning C4244: 'initializing': conversion from 'float' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2300): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2301): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2330): warning C4804: '>': unsafe use of type 'bool' in operation
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2337): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2348): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2374): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2547): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2552): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2567): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2583): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2601): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2608): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2609): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2617): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2617): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2618): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2618): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2627): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2660): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2660): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2669): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2703): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2703): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2714): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2738): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2739): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2747): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2747): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2757): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2778): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2784): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2793): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2800): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2805): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2839): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2871): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2956): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  net.cpp
-c:\users\amade\desktop\pg\wzr\wzr20_3c\net.cpp(47): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: see declaration of 'inet_addr'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\net.cpp(189): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: see declaration of 'inet_addr'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1712): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1880): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(1991): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'Item *'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2153): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'Item *'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2282): warning C4244: 'initializing': conversion from 'float' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2303): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2304): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2333): warning C4804: '>': unsafe use of type 'bool' in operation
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2340): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2351): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2377): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2550): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2555): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2570): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2586): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2604): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2611): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2612): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2620): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2620): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2621): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2621): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2630): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2663): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2663): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2672): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2706): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2706): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2717): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2741): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2742): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2750): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2750): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2760): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2781): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2787): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2796): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2803): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2808): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2842): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2874): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.cpp(2959): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
   main.cpp
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.h(6): warning C4091: 'extern ': ignored on left of 'Terrain' when no variable is declared
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(25): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(27): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(170): warning C4244: '+=': conversion from 'float' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(229): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(231): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(107): warning C4018: '<': signed/unsigned mismatch
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(191): warning C4244: '+=': conversion from 'float' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(283): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(285): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(232): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(286): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(251): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(305): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(278): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(332): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(225): warning C4101: 'text': unreferenced local variable
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(250): warning C4101: 'text': unreferenced local variable
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(322): warning C4244: '=': conversion from 'long' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(323): warning C4244: '-=': conversion from 'float' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(324): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(279): warning C4101: 'text': unreferenced local variable
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(304): warning C4101: 'text': unreferenced local variable
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(376): warning C4244: '=': conversion from 'long' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(377): warning C4244: '-=': conversion from 'float' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(378): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(331): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(385): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(572): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(581): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(585): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(678): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(685): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(693): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(693): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(695): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(695): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(700): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(705): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(715): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(723): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(528): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(626): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(635): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(639): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(732): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(739): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(747): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(747): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(749): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(749): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(754): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(759): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(769): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(777): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(582): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(937): warning C4566: character represented by universal-character-name '\u017A' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(937): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(937): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(937): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(937): warning C4566: character represented by universal-character-name '\u0107' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(937): warning C4566: character represented by universal-character-name '\u0119' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(867): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(1013): warning C4566: character represented by universal-character-name '\u017A' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(1013): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(1013): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(1013): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(1013): warning C4566: character represented by universal-character-name '\u0107' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(1013): warning C4566: character represented by universal-character-name '\u0119' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(943): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(868): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(944): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(869): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(945): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(873): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(949): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(874): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(950): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(875): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(951): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(881): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c\main.cpp(957): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  Generating Code...
+  Compiling...
   graphics.cpp
 c:\users\amade\desktop\pg\wzr\wzr20_3c\objects.h(6): warning C4091: 'extern ': ignored on left of 'Terrain' when no variable is declared
 c:\users\amade\desktop\pg\wzr\wzr20_3c\graphics.cpp(106): warning C4305: 'argument': truncation from 'double' to 'float'
@@ -195,8 +176,4 @@ c:\users\amade\desktop\pg\wzr\wzr20_3c\graphics.cpp(443): warning C4996: 'vsprin
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1469): note: see declaration of 'vsprintf'
   Generating Code...
 c:\users\amade\desktop\pg\wzr\wzr20_3c\graphics.cpp(72): warning C4715: 'GraphicsInitialization': not all control paths return a value
-c:\users\amade\desktop\pg\wzr\wzr20_3c\net.cpp(194): warning C4715: 'unicast_net::send': not all control paths return a value
-c:\users\amade\desktop\pg\wzr\wzr20_3c\net.cpp(203): warning C4715: 'unicast_net::send': not all control paths return a value
-c:\users\amade\desktop\pg\wzr\wzr20_3c\net.cpp(218): warning C4715: 'unicast_net::reciv': not all control paths return a value
-graphics.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   wzr_vis.vcxproj -> C:\Users\amade\Desktop\PG\WZR\wzr20_3c\Debug\wzr_vis.exe

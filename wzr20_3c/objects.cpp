@@ -815,6 +815,9 @@ void MovableObject::DrawObject()
 	GLfloat Surface[] = { 2.0f, 2.0f, 1.0f, 1.0f };
 	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, Surface);
 	glRasterPos2f(0.30, 1.20);
+	if (party_number > 0) {
+		glPrint("%d Party:", iID, party_number);
+	}
 	glPrint("%d", iID);
 	glPopMatrix();
 }

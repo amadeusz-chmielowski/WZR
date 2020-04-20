@@ -26,7 +26,7 @@ class MovableObject
 {
 public:
 	int iID;                  // identyfikator obiektu
-
+	int party_number = -1;
 	ObjectState state;
 
 	// parametry akcji:

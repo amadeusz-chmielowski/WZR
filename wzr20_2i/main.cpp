@@ -227,11 +227,11 @@ void VirtualWorldCycle()
 		MovableObject *veh = it->second;
 
 		//veh->state.vPos = ...
-		veh->state.vPos = veh->state.vPos + (veh->state.vV*fDt) + ((veh->state.vA)*fDt*fDt / 3.0f);
+		veh->state.vPos = veh->state.vPos + (veh->state.vV*fDt) + ((veh->state.vA)*fDt*fDt / 4.0f);
 
 
 		////veh->state.vV = ....
-		veh->state.vV = veh->state.vV + veh->state.vA*fDt*0.3;
+		veh->state.vV = veh->state.vV + veh->state.vA*fDt*0.5;
 
 
 		//veh->state.qOrient = ....

@@ -17,7 +17,9 @@ float test_scenario[][4] = { { 9.5, 110, 0, 0 }, { 5, 20, -0.25 / 8, 0 }, { 0.5,
 #include <time.h>
 #include <gl\gl.h>
 #include <gl\glu.h>
-#include <iterator> 
+#include <iterator>
+#include <iostream>
+#include <fstream>
 #include <map>
 
 #include "objects.h"
@@ -26,6 +28,8 @@ float test_scenario[][4] = { { 9.5, 110, 0, 0 }, { 5, 20, -0.25 / 8, 0 }, { 0.5,
 using namespace std;
 
 FILE *f = fopen("wzr_log_file.txt", "a"); // plik do zapisu informacji testowych
+ofstream myfile("road.txt");
+ifstream automat("automat.txt");
 
 
 MovableObject *my_vehicle;               // obiekt przypisany do tej aplikacji
@@ -190,6 +194,7 @@ void VirtualWorldCycle()
 
 		if (test_finished) // czas dobiegl konca -> koniec testu 
 		{
+			myfile.close();
 			if_prediction_test = false;
 			char text[200];
 			sprintf(text, "Po czasie %3.2f[s]  œr.czêstoœæ = %0.2f[r/s]  œr.odl = %0.3f[m]  œr.ró¿n.k¹t. = %0.3f[st]",
@@ -225,13 +230,21 @@ void VirtualWorldCycle()
 	for (map<int, MovableObject*>::iterator it = network_vehicles.begin(); it != network_vehicles.end(); ++it)
 	{
 		MovableObject *veh = it->second;
-
+		float x, y, z;
+		float x1, y1, z1;
+		automat >> x >> y >> z;
 		//veh->state.vPos = ...
-		veh->state.vPos = veh->state.vPos + (veh->state.vV*fDt) + ((veh->state.vA)*fDt*fDt / 3.0f);
+		veh->state.vPos = veh->state.vPos + (veh->state.vV*fDt) + ((veh->state.vA)*fDt*fDt / 4.0f);
+		x1 = veh->state.vPos.x;
+		y1 = veh->state.vPos.y;
+		z1 = veh->state.vPos.z;
 
+		veh->state.vPos.x = (x + x1)/2.0;
+		veh->state.vPos.y = (y + y1) / 2.0;
+		veh->state.vPos.z = (z + z1) / 2.0;
 
 		////veh->state.vV = ....
-		veh->state.vV = veh->state.vV + veh->state.vA*fDt*0.3;
+		veh->state.vV = veh->state.vV + veh->state.vA*fDt*0.5;
 
 
 		//veh->state.qOrient = ....
@@ -244,6 +257,7 @@ void VirtualWorldCycle()
 	}
 	//Release the Critical section
 	LeaveCriticalSection(&m_cs);
+	myfile << my_vehicle->state.vPos.x <<" " << my_vehicle->state.vPos.y << " " << my_vehicle->state.vPos.z << std::endl;
 }
 
 // *****************************************************************

@@ -151,3 +151,69 @@ poczatek interakcji
 my_vehicle->iID = 41
 Po czasie 35.05[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 1.990[m]  œr.ró¿n.k¹t. = 1.999[st]
 Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 503
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.00[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 2.077[m]  œr.ró¿n.k¹t. = 3.751[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 738
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.06[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 1.975[m]  œr.ró¿n.k¹t. = 2.175[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 859
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.06[s]  œr.czêstoœæ = 0.86[r/s]  œr.odl = 2.663[m]  œr.ró¿n.k¹t. = 5.937[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 98
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.05[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 2.413[m]  œr.ró¿n.k¹t. = 3.082[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 352
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.02[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 2.379[m]  œr.ró¿n.k¹t. = 1.509[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 953
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.07[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 3.087[m]  œr.ró¿n.k¹t. = 3.799[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 306
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.03[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 2.553[m]  œr.ró¿n.k¹t. = 1.505[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 779
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.06[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 8.058[m]  œr.ró¿n.k¹t. = 2.377[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 830
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.02[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 1438757.750[m]  œr.ró¿n.k¹t. = 2.635[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 193
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.05[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 1793624.875[m]  œr.ró¿n.k¹t. = 1.791[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 402
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.05[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 1422453.000[m]  œr.ró¿n.k¹t. = 4.051[st]
+Koniec interakcji

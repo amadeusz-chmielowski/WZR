@@ -816,7 +816,7 @@ void MovableObject::DrawObject()
 	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, Surface);
 	glRasterPos2f(0.30, 1.20);
 	if (party_number > 0) {
-		glPrint("%d Party:", iID, party_number);
+		glPrint("%d Party:%d", iID, party_number);
 	}
 	else {
 		glPrint("%d", iID);

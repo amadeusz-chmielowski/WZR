@@ -485,6 +485,17 @@ LRESULT CALLBACK WndProc(HWND okno, UINT kod_meldunku, WPARAM wParam, LPARAM lPa
 			break;
 
 		}
+		case '0': {
+			//zapisanie stanu
+			Ramka ramka;
+			ramka.stan = MojObiekt->Stan();               // stan w³asnego obiektu 
+			ramka.iID = MojObiekt->iID;
+			ramka.typ = 3;
+			ramka.pressed_key = 0;
+
+			multi_send->send((char*)&ramka, sizeof(Ramka));  // wys³anie komunikatu do pozosta³ych aplikacji
+			break;
+		}
 		case '1': {
 			//zapisanie stanu
 			Ramka ramka;

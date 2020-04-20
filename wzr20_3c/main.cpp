@@ -214,8 +214,9 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					frame_.frame_type = ACCEPTED_INVITE;
 					frame_.iID = my_vehicle->iID;
 					frame_.iID_receiver = frame.iID;
-					frame.team_number = parties.size() + 1;
+					frame_.team_number = parties.size() + 1;
 					int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+					my_vehicle->party_number = frame_.team_number;
 				}
 
 			}

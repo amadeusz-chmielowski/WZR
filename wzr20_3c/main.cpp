@@ -208,9 +208,9 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 				msg += "Invite to party from " + to_string(frame.iID);
 				LPCSTR message = msg.c_str();
 
-				int result = MessageBox(NULL, message, "Zaproszenie", MB_OK);
+				int result = MessageBox(NULL, message, "Zaproszenie", MB_YESNO);
 
-				if (result == 1) {
+				if (result == 6) {
 					Frame frame_;
 					frame_.frame_type = ACCEPTED_INVITE;
 					frame_.iID = my_vehicle->iID;

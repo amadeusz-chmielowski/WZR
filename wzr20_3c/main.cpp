@@ -151,7 +151,8 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 				else if ((network_vehicles.size() > 0) && (network_vehicles[frame.iID] != NULL))
 				{
 					terrain.DeleteObjectsFromSectors(network_vehicles[frame.iID]);
-					network_vehicles[frame.iID]->ChangeState(state);   // aktualizacja stanu obiektu obcego 	
+					network_vehicles[frame.iID]->ChangeState(state);   // aktualizacja stanu obiektu obcego
+					network_vehicles[frame.iID]->party_number = frame.team_number;
 					terrain.InsertObjectIntoSectors(network_vehicles[frame.iID]);
 				}
 
@@ -253,6 +254,9 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 		}
 		case FUEL_REQUEST:
 		{
+			if (frame.iID == my_vehicle->iID) {
+				break;
+			}
 			if (frame.team_number == my_vehicle->party_number) {
 				string msg = "";
 				msg += "Zbieraj paliwo";
@@ -264,6 +268,9 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 		}
 		case MONEY_REQUEST:
 		{
+			if (frame.iID == my_vehicle->iID) {
+				break;
+			}
 			if (frame.team_number == my_vehicle->party_number) {
 				string msg = "";
 				msg += "Zbieraj kase";

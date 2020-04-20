@@ -818,7 +818,9 @@ void MovableObject::DrawObject()
 	if (party_number > 0) {
 		glPrint("%d Party:", iID, party_number);
 	}
-	glPrint("%d", iID);
+	else {
+		glPrint("%d", iID);
+	}
 	glPopMatrix();
 }
 

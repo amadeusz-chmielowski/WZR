@@ -215,6 +215,13 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					frame_.iID = my_vehicle->iID;
 					frame_.iID_receiver = frame.iID;
 					frame_.team_number = parties.size() + 1;
+
+
+					string msg = "";
+					msg += "Party number" + to_string(frame_.team_number);
+					LPCSTR message = msg.c_str();
+
+					int result = MessageBox(NULL, message, "Party", MB_OK);
 					int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
 					my_vehicle->party_number = frame_.team_number;
 				}
@@ -227,6 +234,11 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 			if (frame.iID_receiver == my_vehicle->iID) {
 				//update party
 				my_vehicle->party_number = frame.team_number;
+				string msg = "";
+				msg += "Party number" + to_string(frame.team_number);
+				LPCSTR message = msg.c_str();
+
+				int result = MessageBox(NULL, message, "Party", MB_OK);
 
 			}
 				break;

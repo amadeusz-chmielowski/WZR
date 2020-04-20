@@ -59,7 +59,7 @@ int cursor_x, cursor_y;                         // polo¿enie kursora myszki w c
 extern float TransferSending(int ID_receiver, int transfer_type, float transfer_value);
 
 enum frame_types {
-	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER, INVITE, ACCEPTED_INVITE
+	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER, INVITE, ACCEPTED_INVITE, FUEL_REQUEST, MONEY_REQUEST
 };
 
 enum transfer_types { MONEY, FUEL };
@@ -240,8 +240,38 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 
 				int result = MessageBox(NULL, message, "Party", MB_OK);
 
+				Frame frame_;
+				frame_.frame_type = OBJECT_STATE;
+				frame_.state = my_vehicle->State();         // state w³asnego obiektu 
+				frame_.iID = my_vehicle->iID;
+				frame_.team_number = my_vehicle->party_number;
+				frame_.existing_time = clock() - start_time;
+				int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+
 			}
 				break;
+		}
+		case FUEL_REQUEST:
+		{
+			if (frame.team_number == my_vehicle->party_number) {
+				string msg = "";
+				msg += "Zbieraj paliwo";
+				LPCSTR message = msg.c_str();
+
+				int result = MessageBox(NULL, message, "Party", MB_OK);
+			}
+			break;
+		}
+		case MONEY_REQUEST:
+		{
+			if (frame.team_number == my_vehicle->party_number) {
+				string msg = "";
+				msg += "Zbieraj kase";
+				LPCSTR message = msg.c_str();
+
+				int result = MessageBox(NULL, message, "Party", MB_OK);
+			}
+			break;
 		}
 
 		} // switch po typach ramek
@@ -313,6 +343,7 @@ void VirtualWorldCycle()
 		frame.iID_receiver = my_vehicle->iID_collider;
 		frame.vdV_collision = my_vehicle->vdV_collision;
 		frame.iID = my_vehicle->iID;
+		frame.team_number = my_vehicle->party_number;
 		int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
 
 		char text[128];
@@ -328,6 +359,7 @@ void VirtualWorldCycle()
 	frame.frame_type = OBJECT_STATE;
 	frame.state = my_vehicle->State();         // state w³asnego obiektu 
 	frame.iID = my_vehicle->iID;
+	frame.team_number = my_vehicle->party_number;
 	frame.existing_time = clock() - start_time;
 	int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
 
@@ -846,6 +878,26 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 
 				}
 			}
+			break;
+		}
+		case 'P': {
+			Frame frame_;
+			frame_.frame_type = FUEL_REQUEST;
+			frame_.state = my_vehicle->State();         // state w³asnego obiektu 
+			frame_.iID = my_vehicle->iID;
+			frame_.team_number = my_vehicle->party_number;
+			frame_.existing_time = clock() - start_time;
+			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+			break;
+		}
+		case 'K': {
+			Frame frame_;
+			frame_.frame_type = MONEY_REQUEST;
+			frame_.state = my_vehicle->State();         // state w³asnego obiektu 
+			frame_.iID = my_vehicle->iID;
+			frame_.team_number = my_vehicle->party_number;
+			frame_.existing_time = clock() - start_time;
+			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
 			break;
 		}
 

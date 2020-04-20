@@ -888,23 +888,45 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 			break;
 		}
 		case 'P': {
+			float min_dist = 100;
 			Frame frame_;
 			frame_.frame_type = FUEL_REQUEST;
 			frame_.state = my_vehicle->State();         // state w³asnego obiektu 
 			frame_.iID = my_vehicle->iID;
 			frame_.team_number = my_vehicle->party_number;
 			frame_.existing_time = clock() - start_time;
-			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+			for (map<int, MovableObject*>::iterator it = network_vehicles.begin(); it != network_vehicles.end(); ++it)
+			{
+				if (it->second)
+				{
+					MovableObject *ob = it->second;
+					if (min_dist >= (ob->state.vPos - my_vehicle->state.vPos).length()) {
+						int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+					}
+
+				}
+			}
 			break;
 		}
 		case 'K': {
+			float min_dist = 100;
 			Frame frame_;
 			frame_.frame_type = MONEY_REQUEST;
 			frame_.state = my_vehicle->State();         // state w³asnego obiektu 
 			frame_.iID = my_vehicle->iID;
 			frame_.team_number = my_vehicle->party_number;
 			frame_.existing_time = clock() - start_time;
-			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+			for (map<int, MovableObject*>::iterator it = network_vehicles.begin(); it != network_vehicles.end(); ++it)
+			{
+				if (it->second)
+				{
+					MovableObject *ob = it->second;
+					if (min_dist >= (ob->state.vPos - my_vehicle->state.vPos).length()) {
+						int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+					}
+
+				}
+			}
 			break;
 		}
 

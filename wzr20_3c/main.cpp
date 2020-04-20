@@ -99,26 +99,28 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 		// Lock the Critical section
 		EnterCriticalSection(&m_cs);               // wejście na ścieżkę krytyczną - by inne wątki (np. główny) nie współdzielił 
 
-		switch (frame.frame_type)
-		{
-			if (frame.team_number > 0) {
-				if (parties.size() > 0) {
-					bool party_exist = false;
-					for (int i = 0; i < parties.size(); i++) {
-						if (frame.team_number == parties[i]) {
-							party_exist = true;
-							break;
-						}
+		if (frame.team_number > 0) {
+			if (parties.size() > 0) {
+				bool party_exist = false;
+				for (int i = 0; i < parties.size(); i++) {
+					if (frame.team_number == parties[i]) {
+						party_exist = true;
+						break;
 					}
-					if (!party_exist) {
-						parties.push_back(frame.team_number);
-					}
-
 				}
-				else {
+				if (!party_exist) {
 					parties.push_back(frame.team_number);
 				}
+
 			}
+			else {
+				parties.push_back(frame.team_number);
+			}
+		}
+
+		switch (frame.frame_type)
+		{
+
 
 		case OBJECT_STATE:           // podstawowy typ ramki informuj¹cej o stanie obiektu              
 		{

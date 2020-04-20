@@ -7,6 +7,7 @@
 #include <windows.h>
 #include <math.h>
 #include <time.h>
+#include<string>
 
 #include <gl\gl.h>
 #include <gl\glu.h>
@@ -57,7 +58,7 @@ int cursor_x, cursor_y;                         // polo¿enie kursora myszki w c
 extern float TransferSending(int ID_receiver, int transfer_type, float transfer_value);
 
 enum frame_types {
-	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER
+	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER, INVITE
 };
 
 enum transfer_types { MONEY, FUEL};
@@ -172,6 +173,21 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					my_vehicle->state.amount_of_fuel += frame.transfer_value;
 
 				// nale¿a³oby jeszcze przelew potwierdziæ (w UDP ramki mog¹ byæ gubione!)
+			}
+			break;
+		}
+		case INVITE:
+		{
+			if (frame.iID == my_vehicle->iID) {
+				//sam siebie nie moge zaprosic
+				break;
+			}
+			else {
+				string msg = "";
+				msg += "Invite to party from " + to_string(frame.iID);
+				LPCSTR message = msg.c_str();
+
+				MessageBox(main_window, message, "Zaproszenie", MB_OK);
 			}
 			break;
 		}
@@ -755,9 +771,31 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 		}
 		
 		case 'L':     // rozpoczęcie zaznaczania metodą lasso
+		{
 			L_pressed = true;
 			break;
-	
+		}
+		case 'I':
+		{
+			Frame frame;
+			frame.frame_type = INVITE;
+			frame.iID = my_vehicle->iID;
+
+			float min_dist = 100;
+
+			for (map<int, MovableObject*>::iterator it = network_vehicles.begin(); it != network_vehicles.end(); ++it)
+			{
+				if (it->second)
+				{
+					MovableObject *ob = it->second;
+					if (min_dist >= (ob->state.vPos - my_vehicle->state.vPos).length) {
+						int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
+					}
+						
+				}
+			}
+			break;
+		}
 
 		} // switch po klawiszach
 

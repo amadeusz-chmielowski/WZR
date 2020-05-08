@@ -1,32 +1,32 @@
 ﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   main.cpp
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(29): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(161): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(234): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(162): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(235): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(164): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(195): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(196): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(515): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(522): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(548): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(553): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(574): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(582): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(593): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(516): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(523): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(549): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(554): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(575): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(583): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(594): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(594): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
 c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(595): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(599): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(600): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(596): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(600): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
 c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(601): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(607): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(602): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(675): warning C4715: 'WndProc': not all control paths return a value
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(608): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\amade\desktop\pg\wzr\wzr20_2i\main.cpp(676): warning C4715: 'WndProc': not all control paths return a value
   wzr_vis.vcxproj -> C:\Users\amade\Desktop\PG\WZR\wzr20_2i\Debug\wzr_vis.exe

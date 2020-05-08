@@ -1,6 +1,7 @@
 /****************************************************
 	Virtual Collaborative Teams - The base program 
     The main module
+	Amadeusz Chmielowski s165398
 ****************************************************/
 
 bool if_prediction_test = true;
@@ -227,11 +228,11 @@ void VirtualWorldCycle()
 		MovableObject *veh = it->second;
 
 		//veh->state.vPos = ...
-		veh->state.vPos = veh->state.vPos + (veh->state.vV*fDt) + ((veh->state.vA)*fDt*fDt / 4.0f);
+		veh->state.vPos = veh->state.vPos + (veh->state.vV*fDt) + ((veh->state.vA)*fDt*fDt / 3.0f);
 
 
 		////veh->state.vV = ....
-		veh->state.vV = veh->state.vV + veh->state.vA*fDt*0.5;
+		veh->state.vV = veh->state.vV + veh->state.vA*fDt*0.3;
 
 
 		//veh->state.qOrient = ....

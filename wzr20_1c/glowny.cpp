@@ -2,6 +2,7 @@
 	Wirtualne zespoly robocze - przykladowy projekt w C++
 	Do zadañ dotycz¹cych wspó³pracy, ekstrapolacji i
 	autonomicznych obiektów
+	Amadeusz Chmielowski s165398
 	****************************************************/
 
 #include <windows.h>

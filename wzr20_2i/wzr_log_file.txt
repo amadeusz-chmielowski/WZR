@@ -151,3 +151,13 @@ poczatek interakcji
 my_vehicle->iID = 41
 Po czasie 35.05[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 1.990[m]  œr.ró¿n.k¹t. = 1.999[st]
 Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 963
+poczatek interakcji
+my_vehicle->iID = 41
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 668
+poczatek interakcji
+my_vehicle->iID = 41
+Koniec interakcji

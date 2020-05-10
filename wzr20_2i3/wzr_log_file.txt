@@ -271,3 +271,51 @@ poczatek interakcji
 my_vehicle->iID = 41
 Po czasie 35.04[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 3.771[m]  œr.ró¿n.k¹t. = 2.626[st]
 Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 751
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.68[s]  œr.czêstoœæ = 0.95[r/s]  œr.odl = 4.168[m]  œr.ró¿n.k¹t. = 3.361[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 937
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.04[s]  œr.czêstoœæ = 0.94[r/s]  œr.odl = 3.363[m]  œr.ró¿n.k¹t. = 4.140[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 163
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.02[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 4.375[m]  œr.ró¿n.k¹t. = 3.186[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 359
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.02[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 4.315[m]  œr.ró¿n.k¹t. = 2.920[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 535
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.06[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 4.234[m]  œr.ró¿n.k¹t. = 4.129[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 764
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.09[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 5.651[m]  œr.ró¿n.k¹t. = 4.598[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 924
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.07[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 3.479[m]  œr.ró¿n.k¹t. = 2.572[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 169
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.07[s]  œr.czêstoœæ = 0.97[r/s]  œr.odl = 3.027[m]  œr.ró¿n.k¹t. = 2.751[st]
+Koniec interakcji

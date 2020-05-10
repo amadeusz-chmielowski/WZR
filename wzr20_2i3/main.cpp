@@ -110,16 +110,16 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 			//state.vPos = ...
 			state.vPos = state.vPos + (state.vV*time_diff) + ((state.vA)*time_diff*time_diff / 4.0f);
 
-			////state.vV = ....
-			//state.vV = state.vV + state.vA*time_diff*0.5;
+			//state.vV = ....
+			//state.vV = state.vV + state.vA*time_diff;
 
 
 			////state.qOrient = ....
-			//state.qOrient = AsixToQuat((state.vV_ang*time_diff + state.vA_ang*time_diff*time_diff / 2.0f),
-			//	(state.vV_ang*time_diff + state.vA_ang*time_diff*time_diff / 2.0f).length()) * state.qOrient;
+			state.qOrient = AsixToQuat((state.vV_ang*time_diff + state.vA_ang*time_diff*time_diff / 3.0f),
+				(state.vV_ang*time_diff + state.vA_ang*time_diff*time_diff / 3.0f).length()) * state.qOrient;
 
 			////state.vV_ang = ....
-			state.vV_ang = state.vV_ang + state.vA_ang * time_diff;
+			state.vV_ang = state.vV_ang + state.vA_ang * time_diff * 0.7;
 			network_vehicles[frame.iID]->StateUpdate(state);             // aktualizacja stateu obiektu obcego 	
 		}
 		//Release the Critical section

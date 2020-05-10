@@ -475,6 +475,7 @@ void VirtualWorldCycle()
 	}
 
 	if (auction_started && !auction_timer_started) {
+		auction_timer_started = true;
 		auction_timer.setInterval([&]() {
 			auction_timeout += 1;
 		}, 1000);

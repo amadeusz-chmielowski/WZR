@@ -55,7 +55,10 @@ int auction_timeout = 0;
 int time_between_auctions = 0;
 map<int, int> agrrement_values;
 Timer timer = Timer();
-
+Timer auction_timer = Timer();
+bool auction_started = false;
+bool auction_timer_started = false;
+bool auction_master = false;
 #pragma endregion
 
 
@@ -78,7 +81,9 @@ int cursor_x, cursor_y;                         // polo¿enie kursora myszki w c
 extern float TransferSending(int ID_receiver, int transfer_type, float transfer_value);
 
 enum frame_types {
-	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER, INVITE, ACCEPTED_INVITE, FUEL_REQUEST, MONEY_REQUEST, AUCTION_STARTER, AUCTION_REPLY, AUCTION_BID
+	OBJECT_STATE, ITEM_TAKING, ITEM_RENEWAL, COLLISION, TRANSFER,
+	INVITE, ACCEPTED_INVITE, FUEL_REQUEST, MONEY_REQUEST,
+	AUCTION_STARTER, AUCTION_REPLY, AUCTION_BID, AUCTION_END
 };
 
 enum transfer_types { MONEY, FUEL };
@@ -326,8 +331,9 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					frame_.frame_type = AUCTION_REPLY;
 					frame_.iID = my_vehicle->iID;
 					frame_.iID_receiver = frame.iID;
-					frame.yes_no = true;
+					frame_.yes_no = true;
 					in_auction = true;
+					auction_started = true;
 					iIDs_bidding.clear();
 					agrrement_values.clear();
 					iIDs_bidding.push_back(frame.iID);
@@ -359,16 +365,10 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					LPCSTR message = msg.c_str();
 					sprintf_s(par_view.inscription2, message);
 					in_auction = true;
+					auction_started = true;
 					iIDs_bidding.push_back(frame.iID);
 					agrrement_values[frame.iID] = 50;
 					agrrement_values[my_vehicle->iID] = 50;
-					Frame frame_;
-					frame_.frame_type = OBJECT_STATE;
-					frame_.state = my_vehicle->State();         // state w³asnego obiektu 
-					frame_.iID = my_vehicle->iID;
-					frame_.team_number = my_vehicle->party_number;
-					frame_.existing_time = clock() - start_time;
-					int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
 				}
 				else {
 					string msg = "";
@@ -405,6 +405,17 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 				}
 
 
+			}
+			break;
+		}
+		case AUCTION_END:
+		{
+			if (frame.iID_receiver == my_vehicle->iID) {
+				string msg = "";
+				msg += "zaakceptowano twoja oferte ";
+				LPCSTR message = msg.c_str();
+
+				int result = MessageBox(NULL, message, "Aukcja", MB_OK);
 			}
 			break;
 		}
@@ -454,6 +465,29 @@ void VirtualWorldCycle()
 	if (time_between_auctions > AUCTION_BREAK) {
 		timer.stop();
 		time_between_auctions = 0;
+	}
+
+	if (auction_master && in_auction && auction_timeout > AUCTION_TIMEOUT) {
+		string msg = "";
+		msg += "Accept offer from: " + iIDs_bidding[0];
+		LPCSTR message = msg.c_str();
+
+		int result = MessageBox(NULL, message, "Aukcja", MB_YESNO);
+		if (result == 6) {
+			Frame frame_;
+			frame_.frame_type = AUCTION_END;
+			frame_.iID = my_vehicle->iID;
+			frame_.iID_receiver = iIDs_bidding[0];
+			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+		}
+		auction_started = false;
+		in_auction = false;
+	}
+
+	if (auction_started && !auction_timer_started) {
+		timer.setInterval([&]() {
+			auction_timeout += 1;
+		}, 1000);
 	}
 
 	if (in_auction) {
@@ -1051,6 +1085,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 								}, 5000);
 								iIDs_bidding.clear();
 								agrrement_values.clear();
+								auction_master = true;
 							}
 						}
 

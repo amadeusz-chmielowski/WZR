@@ -363,7 +363,7 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					string msg = "";
 					msg += "Auction started with" + to_string(frame.iID);
 					LPCSTR message = msg.c_str();
-					sprintf_s(par_view.inscription2, message);
+					sprintf(par_view.inscription2, message);
 					in_auction = true;
 					auction_started = true;
 					iIDs_bidding.push_back(frame.iID);
@@ -374,7 +374,7 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					string msg = "";
 					msg += "Party member " + to_string(frame.iID) + "declined";
 					LPCSTR message = msg.c_str();
-					sprintf_s(par_view.inscription2, message);
+					sprintf(par_view.inscription2, message);
 					in_auction = false;
 				}
 
@@ -389,7 +389,7 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					string msg = "";
 					msg += to_string(frame.iID) + "bid 1 higher ";
 					LPCSTR message = msg.c_str();
-					sprintf_s(par_view.inscription2, message);
+					sprintf(par_view.inscription2, message);
 					in_auction = true;
 					agrrement_values[frame.iID] = agrrement_values[frame.iID] + 1;
 					agrrement_values[my_vehicle->iID] = agrrement_values[my_vehicle->iID] - 1;
@@ -398,7 +398,7 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					string msg = "";
 					msg += to_string(frame.iID) + "bid 1 lower ";
 					LPCSTR message = msg.c_str();
-					sprintf_s(par_view.inscription2, message);
+					sprintf(par_view.inscription2, message);
 					in_auction = true;
 					agrrement_values[frame.iID] = agrrement_values[frame.iID] - 1;
 					agrrement_values[my_vehicle->iID] = agrrement_values[my_vehicle->iID] + 1;
@@ -480,12 +480,14 @@ void VirtualWorldCycle()
 			frame_.iID_receiver = iIDs_bidding[0];
 			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
 		}
+		auction_timer.stop();
+		auction_timer_started = false;
 		auction_started = false;
 		in_auction = false;
 	}
 
 	if (auction_started && !auction_timer_started) {
-		timer.setInterval([&]() {
+		auction_timer.setInterval([&]() {
 			auction_timeout += 1;
 		}, 1000);
 	}
@@ -497,7 +499,7 @@ void VirtualWorldCycle()
 			msg += to_string(it->first) + ": " + to_string(it->second) + "; ";
 		}
 		LPCSTR message = msg.c_str();
-		sprintf_s(par_view.inscription2, message);
+		sprintf(par_view.inscription2, message);
 	}
 
 	// obliczenie œredniego czasu pomiêdzy dwoma kolejnnymi symulacjami po to, by zachowaæ  fizycznych 

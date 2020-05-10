@@ -399,11 +399,27 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 		case AUCTION_END:
 		{
 			if (frame.iID_receiver == my_vehicle->iID) {
-				string msg = "";
-				msg += "zaakceptowano twoja oferte ";
-				LPCSTR message = msg.c_str();
+				if (frame.yes_no) {
+					string msg = "";
+					msg += "zaakceptowano twoja oferte ";
+					LPCSTR message = msg.c_str();
+					auction_timer.stop();
+					auction_timer_started = false;
+					auction_started = false;
+					in_auction = false;
+					int result = MessageBox(NULL, message, "Aukcja", MB_OK);
+				}
+				else {
+					string msg = "";
+					msg += "odrzucono twoja oferte ";
+					LPCSTR message = msg.c_str();
+					auction_timer.stop();
+					auction_timer_started = false;
+					auction_started = false;
+					in_auction = false;
+					int result = MessageBox(NULL, message, "Aukcja", MB_OK);
+				}
 
-				int result = MessageBox(NULL, message, "Aukcja", MB_OK);
 			}
 			break;
 		}
@@ -466,6 +482,15 @@ void VirtualWorldCycle()
 			frame_.frame_type = AUCTION_END;
 			frame_.iID = my_vehicle->iID;
 			frame_.iID_receiver = iIDs_bidding[0];
+			frame_.yes_no = true;
+			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
+		}
+		else {
+			Frame frame_;
+			frame_.frame_type = AUCTION_END;
+			frame_.iID = my_vehicle->iID;
+			frame_.iID_receiver = iIDs_bidding[0];
+			frame_.yes_no = false;
 			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
 		}
 		auction_timer.stop();
@@ -487,6 +512,7 @@ void VirtualWorldCycle()
 		for (it = agrrement_values.begin(); it != agrrement_values.end(); it++) {
 			msg += to_string(it->first) + ": " + to_string(it->second) + "; ";
 		}
+		msg += " Time left: " + to_string((AUCTION_TIMEOUT - auction_timeout));
 		LPCSTR message = msg.c_str();
 		sprintf(par_view.inscription2, message);
 	}

@@ -583,7 +583,7 @@ void VirtualWorldCycle()
 		Item i = terrain.p[my_vehicle->number_of_taking_item];
 		int type = i.type;
 		if (type == ITEM_COIN && auctioned) {
-			TransferSending(iIDs_bidding[0], MONEY, agrrement_values[iIDs_bidding[0]] * my_vehicle->taking_value);
+			TransferSending(iIDs_bidding[0], MONEY, agrrement_values[iIDs_bidding[0]] / 100.0f * my_vehicle->taking_value);
 		}
 		sprintf(par_view.inscription2, "Wziecie_przedmiotu_o_wartosci_ %f", my_vehicle->taking_value);
 

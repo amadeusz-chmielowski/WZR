@@ -1070,7 +1070,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 				frame.higher_lower = true;
 				int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
 
-				agrrement_values[frame.iID] = agrrement_values[frame.iID_receiver] - 1;
+				agrrement_values[frame.iID_receiver] = agrrement_values[frame.iID_receiver] - 1;
 				agrrement_values[my_vehicle->iID] = agrrement_values[my_vehicle->iID] + 1;
 			}
 			break;
@@ -1086,7 +1086,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 				frame.higher_lower = false;
 				int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
 
-				agrrement_values[frame.iID] = agrrement_values[frame.iID_receiver] + 1;
+				agrrement_values[frame.iID_receiver] = agrrement_values[frame.iID_receiver] + 1;
 				agrrement_values[my_vehicle->iID] = agrrement_values[my_vehicle->iID] - 1;
 			}
 			break;

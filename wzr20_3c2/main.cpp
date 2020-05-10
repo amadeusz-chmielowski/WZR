@@ -1059,7 +1059,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 			}
 			break;
 		}
-		case '+':
+		case VK_OEM_PLUS:
 		{
 			if (in_auction) {
 				Frame frame;
@@ -1072,7 +1072,7 @@ void MessagesHandling(UINT message_type, WPARAM wParam, LPARAM lParam)
 			}
 			break;
 		}
-		case '-':
+		case VK_OEM_MINUS:
 		{
 			if (in_auction) {
 				Frame frame;

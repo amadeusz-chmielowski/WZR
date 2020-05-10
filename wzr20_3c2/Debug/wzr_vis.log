@@ -3,58 +3,58 @@
 c:\users\amade\desktop\pg\wzr\wzr20_3c2\objects.h(6): warning C4091: 'extern ': ignored on left of 'Terrain' when no variable is declared
 c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(29): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(126): warning C4018: '<': signed/unsigned mismatch
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(215): warning C4244: '+=': conversion from 'float' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(432): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(434): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(127): warning C4018: '<': signed/unsigned mismatch
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(216): warning C4244: '+=': conversion from 'float' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(476): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(478): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(435): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(479): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(455): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(499): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(483): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(527): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(428): warning C4101: 'text': unreferenced local variable
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(454): warning C4101: 'text': unreferenced local variable
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(527): warning C4244: '=': conversion from 'long' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(528): warning C4244: '-=': conversion from 'float' to 'long', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(529): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(472): warning C4101: 'text': unreferenced local variable
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(498): warning C4101: 'text': unreferenced local variable
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(571): warning C4244: '=': conversion from 'long' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(572): warning C4244: '-=': conversion from 'float' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(573): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(536): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(580): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(777): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(786): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(790): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(883): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(890): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(898): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(898): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(900): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(900): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(905): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(910): warning C4305: '-=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(920): warning C4305: '/=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(928): warning C4305: '*=': truncation from 'double' to 'float'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(733): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(821): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(830): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(834): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(927): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(934): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(942): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(942): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(944): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(944): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(949): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(954): warning C4305: '-=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(964): warning C4305: '/=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(972): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(777): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1235): warning C4566: character represented by universal-character-name '\u017A' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1235): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1235): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1235): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1235): warning C4566: character represented by universal-character-name '\u0107' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1235): warning C4566: character represented by universal-character-name '\u0119' cannot be represented in the current code page (1252)
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1165): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1306): warning C4566: character represented by universal-character-name '\u017A' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1306): warning C4566: character represented by universal-character-name '\u0142' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1306): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1306): warning C4566: character represented by universal-character-name '\u015B' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1306): warning C4566: character represented by universal-character-name '\u0107' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1306): warning C4566: character represented by universal-character-name '\u0119' cannot be represented in the current code page (1252)
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1236): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1166): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1237): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1167): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1238): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1171): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1242): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1172): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1243): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1173): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1244): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
-c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1179): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\amade\desktop\pg\wzr\wzr20_3c2\main.cpp(1250): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
   wzr_vis.vcxproj -> C:\Users\amade\Desktop\PG\WZR\wzr20_3c2\Debug\wzr_vis.exe

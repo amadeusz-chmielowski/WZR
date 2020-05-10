@@ -360,10 +360,6 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 		{
 			if (frame.iID_receiver == my_vehicle->iID) {
 				if (frame.yes_no) {
-					string msg = "";
-					msg += "Auction started with" + to_string(frame.iID);
-					LPCSTR message = msg.c_str();
-					sprintf(par_view.inscription2, message);
 					in_auction = true;
 					auction_started = true;
 					iIDs_bidding.push_back(frame.iID);
@@ -386,19 +382,11 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 		{
 			if (frame.iID_receiver == my_vehicle->iID) {
 				if (frame.higher_lower) {
-					string msg = "";
-					msg += to_string(frame.iID) + "bid 1 higher ";
-					LPCSTR message = msg.c_str();
-					sprintf(par_view.inscription2, message);
 					in_auction = true;
 					agrrement_values[frame.iID] = agrrement_values[frame.iID] + 1;
 					agrrement_values[my_vehicle->iID] = agrrement_values[my_vehicle->iID] - 1;
 				}
 				else {
-					string msg = "";
-					msg += to_string(frame.iID) + "bid 1 lower ";
-					LPCSTR message = msg.c_str();
-					sprintf(par_view.inscription2, message);
 					in_auction = true;
 					agrrement_values[frame.iID] = agrrement_values[frame.iID] - 1;
 					agrrement_values[my_vehicle->iID] = agrrement_values[my_vehicle->iID] + 1;
@@ -469,7 +457,7 @@ void VirtualWorldCycle()
 
 	if (auction_master && in_auction && auction_timeout > AUCTION_TIMEOUT) {
 		string msg = "";
-		msg += "Accept offer from: " + iIDs_bidding[0];
+		msg += "Accept offer from: " + to_string(iIDs_bidding[0]);
 		LPCSTR message = msg.c_str();
 
 		int result = MessageBox(NULL, message, "Aukcja", MB_YESNO);

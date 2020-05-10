@@ -59,6 +59,7 @@ Timer auction_timer = Timer();
 bool auction_started = false;
 bool auction_timer_started = false;
 bool auction_master = false;
+bool auctioned = false;
 #pragma endregion
 
 
@@ -407,6 +408,7 @@ DWORD WINAPI ReceiveThreadFunction(void *ptr)
 					auction_timer_started = false;
 					auction_started = false;
 					in_auction = false;
+					auctioned = true;
 					int result = MessageBox(NULL, message, "Aukcja", MB_OK);
 				}
 				else {
@@ -483,6 +485,7 @@ void VirtualWorldCycle()
 			frame_.iID = my_vehicle->iID;
 			frame_.iID_receiver = iIDs_bidding[0];
 			frame_.yes_no = true;
+			auctioned = true;
 			int iRozmiar = multi_send->send((char*)&frame_, sizeof(Frame));
 		}
 		else {
@@ -497,6 +500,9 @@ void VirtualWorldCycle()
 		auction_timer_started = false;
 		auction_started = false;
 		in_auction = false;
+	}
+	else if (!auction_master && in_auction && auction_timeout > AUCTION_TIMEOUT) {
+		auction_timer.stop();
 	}
 
 	if (auction_started && !auction_timer_started) {
@@ -574,7 +580,11 @@ void VirtualWorldCycle()
 		frame.state = my_vehicle->State();
 		frame.iID = my_vehicle->iID;
 		int iRozmiar = multi_send->send((char*)&frame, sizeof(Frame));
-
+		Item i = terrain.p[my_vehicle->number_of_taking_item];
+		int type = i.type;
+		if (type == ITEM_COIN && auctioned) {
+			TransferSending(iIDs_bidding[0], MONEY, agrrement_values[iIDs_bidding[0]] * my_vehicle->taking_value);
+		}
 		sprintf(par_view.inscription2, "Wziecie_przedmiotu_o_wartosci_ %f", my_vehicle->taking_value);
 
 		my_vehicle->number_of_taking_item = -1;

@@ -326,7 +326,11 @@ void VirtualWorldCycle()
 		my_vehicle->number_of_renewed_item = -1;
 	}
 
-
+	if (my_vehicle->ifTransactionAcepted) {
+		TransferSending(my_vehicle->transactionTarget_iID, transfer_types::FUEL, my_vehicle->transactionFuel);
+		TransferSending(my_vehicle->transactionTarget_iID, transfer_types::MONEY, my_vehicle->transactionMoney);
+		my_vehicle->ifTransactionAcepted = false;
+	}
 
 	// --------------------------------------------------------------------
 	// --------------- MIEJSCE NA ALGORYTM STEROWANIA ---------------------
@@ -408,7 +412,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	WNDCLASS window_class; //klasa głównego okna aplikacji
 
 	static char class_name[] = "Basic";
-
+	terrain.movableObjects = &network_vehicles;
 	//Definiujemy klase głównego okna aplikacji
 	//Okreslamy tu wlasciwosci okna, szczegoly wygladu oraz
 	//adres funkcji przetwarzajacej komunikaty

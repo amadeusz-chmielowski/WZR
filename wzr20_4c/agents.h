@@ -2,6 +2,8 @@
 #include "objects.h"
 #endif
 
+#define MAX_RADIUS 200
+
 class AutoPilot
 {       
 private:

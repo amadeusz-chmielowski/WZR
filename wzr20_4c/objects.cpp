@@ -52,8 +52,11 @@ unsigned long __log2(unsigned long x)  // w starszej wersji Visuala (< 2013) nie
 
 MovableObject::MovableObject(Terrain *t)             // konstruktor                   
 {
-
+	lengthToClosedItem = 0;
+	selectedItemToForward = NULL;
 	terrain = t;
+	this->state.maxFuelAmount = 200;
+	this->state.minFuelAmount = 20;
 
 	//iID = (unsigned int)(clock() % 1000);  // identyfikator obiektu
 	iID = (unsigned int)(rand() % 1000);  // identyfikator obiektu
@@ -138,6 +141,13 @@ MovableObject::MovableObject(Terrain *t)             // konstruktor
 
 MovableObject::~MovableObject()            // destruktor
 {
+}
+
+bool MovableObject::IfFuelCouldBeSold(float amountOfFuel) {
+	if (this->state.amount_of_fuel > this->state.minFuelAmount + amountOfFuel)
+		return true;
+	else
+		return false;
 }
 
 void MovableObject::ChangeState(ObjectState __state)  // przepisanie podanego stanu 
@@ -1342,6 +1352,7 @@ Terrain::Terrain()
     detail_level = 0.7;                 // stopieñ szczegó³owoœci wyœwietlania przedmiotów i powierzchni terrainu (1 - pe³na, 0 - minimalna)
 	number_of_displays = 0;
 	ts = new SectorsHashTable();
+	fuelMarketCost = 10;
 	p = NULL;
 
 	number_of_selected_items_max = 100;  // to nie oznacza, ¿e tyle tylko mo¿na zaznaczyæ przedmiotów, ale ¿e tyle jest miejsca w tablicy, która jest automatycznie powiêkszana
@@ -2635,6 +2646,17 @@ void Terrain::DeleteItemFromSectors(Item *prz)
 				}
 			}
 		}
+}
+
+MovableObject* Terrain::SearchForAgentWithFuelToSale(float amoutOfFuel) {
+
+	for (auto obj : *movableObjects)
+	{
+		//dopisac wyslanie senda transferu
+		if (obj.second->IfFuelCouldBeSold(amoutOfFuel));
+		return obj.second;
+	}
+	return NULL;
 }
 
 long Terrain::ObjectsInRadius(MovableObject*** object_tab_pointer, Vector3 pol, float radius)

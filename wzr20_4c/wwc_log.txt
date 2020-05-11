@@ -1,0 +1,11 @@
+
+Odczyt danych o terrainie z pliku stozki_5.map
+
+  size sektora = 480.000000
+  czas odnowy przedmiotu = 120.000000
+  if_toroidal_world = 0
+  border_x = -1.000000
+  border_z = -1.000000
+  liczba sekt. = 967
+  std poziom wody = -10000000000.000000
+Znaleziono w pliku stozki_5.map przedmioty w liczbie 1556

@@ -1,9 +1,37 @@
 #define _OBJECTS__H
 #include <stdio.h>
+#include <map>
 #include "quaternion.h"
 
 #define PI 3.1416
 extern class Terrain;
+
+struct Item
+{
+	Vector3 vPos;                  // po³o¿enie œrodka obiektu
+	quaternion qOrient;            // orientacja (po³o¿enie katowe, praktycznie nieu¿ywane)
+
+	int type;
+	int subtype;
+	long index;                    // identyfikator - numer przedmiotu (jest potrzebny przy przesy³aniu danych z tego wzglêdu,
+	//    ¿e wyszukiwanie przedmiotów (np. ItemsInRadius()) zwraca wskaŸniki)
+
+	float value;                   // w zal. od typu nomina³ monety /ilosc paliwa, itd.
+	float diameter;                // np. grubosc pnia u podstawy, diameter monety
+	float diameter_visual;         // œrednica widocznoœci - sfery, która opisuje przedmiot
+	float param_f[3];              // dodatkowe parametry roznych typow
+	long param_i[3];
+	bool if_selected;              // czy przedmiot jest zaznaczony przez uzytkownika
+	long group;                    // numer grupy do której nale¿y przedmiot;
+
+	bool to_take;                  // czy przedmiot mozna wziac
+	bool if_taken_by_me;           // czy przedmiot wziety przeze mnie
+	bool if_renewable;             // czy mo¿e siê odnawiaæ w tym samym miejscu po pewnym czasie
+	long taking_time;              // czas wziêcia (potrzebny do przywrócenia)
+
+
+	unsigned long display_number;  // zgodny z liczba wyœwietleñ po to, by nie powtarzaæ rysowania przedmiotów
+};
 
 struct ObjectState
 {
@@ -19,6 +47,9 @@ struct ObjectState
 	float amount_of_fuel;
 	int iID_owner;
 	int if_autonomous;
+
+	int minFuelAmount;
+	int maxFuelAmount;
 };
 
 
@@ -26,7 +57,12 @@ class MovableObject
 {
 public:
 	int iID;                  // identyfikator obiektu
-
+	int lengthToClosedItem;
+	bool ifTransactionAcepted = false;
+	long transactionMoney;
+	float transactionFuel;
+	int transactionTarget_iID;
+	Item * selectedItemToForward;
 	ObjectState state;
 
 	// parametry akcji:
@@ -78,6 +114,7 @@ public:
 	void Simulation(float dt);  // symulacja ruchu obiektu w oparciu o biezacy state, przylozone sily
 	// oraz czas dzialania sil. Efektem symulacji jest nowy state obiektu 
 	void DrawObject();			   // odrysowanie obiektu					
+	bool IfFuelCouldBeSold(float amountOfFuel);
 };
 
 enum ItemTypes { ITEM_COIN, ITEM_BARREL, ITEM_TREE, ITEM_BUILDING, ITEM_POINT, ITEM_EDGE, ITEM_START_PLACE, ITEM_WALL, ITEM_GATE };
@@ -86,32 +123,7 @@ enum TreeSubtypes { TREE_POPLAR, TREE_SPRUCE, TREE_BAOBAB, TREE_FANTAZJA};
 //char *DRZ_nazwy[] = { "topola", "swierk", "baobab", "fantazja" };
 enum PointSubtypes {POINT_ORDINAL, POINT_OF_EDGE, POINT_OF_WATER, POINT_OF_VEHICLE};
 
-struct Item
-{
-	Vector3 vPos;                  // po³o¿enie œrodka obiektu
-	quaternion qOrient;            // orientacja (po³o¿enie katowe, praktycznie nieu¿ywane)
 
-	int type;
-	int subtype;
-	long index;                    // identyfikator - numer przedmiotu (jest potrzebny przy przesy³aniu danych z tego wzglêdu,
-	//    ¿e wyszukiwanie przedmiotów (np. ItemsInRadius()) zwraca wskaŸniki)
-
-	float value;                   // w zal. od typu nomina³ monety /ilosc paliwa, itd.
-	float diameter;                // np. grubosc pnia u podstawy, diameter monety
-	float diameter_visual;         // œrednica widocznoœci - sfery, która opisuje przedmiot
-	float param_f[3];              // dodatkowe parametry roznych typow
-	long param_i[3];
-	bool if_selected;              // czy przedmiot jest zaznaczony przez uzytkownika
-	long group;                    // numer grupy do której nale¿y przedmiot;
-
-	bool to_take;                  // czy przedmiot mozna wziac
-	bool if_taken_by_me;           // czy przedmiot wziety przeze mnie
-	bool if_renewable;             // czy mo¿e siê odnawiaæ w tym samym miejscu po pewnym czasie
-	long taking_time;              // czas wziêcia (potrzebny do przywrócenia)
-
-	
-	unsigned long display_number;  // zgodny z liczba wyœwietleñ po to, by nie powtarzaæ rysowania przedmiotów
-};
 
 struct LassoPoint
 {
@@ -223,6 +235,10 @@ public:
 	void DeleteItemFromSectors(Item *prz);
 public:
 
+
+	MovableObject* SearchForAgentWithFuelToSale(float amountOfFuel);
+	std::map<int, MovableObject*>* movableObjects;
+	float fuelMarketCost;
 	long number_of_items;      // liczba przedmiotów na planszy
 	long number_of_items_max;  // size tablicy przedmiotów
 

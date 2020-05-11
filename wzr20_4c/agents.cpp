@@ -85,23 +85,27 @@ void AutoPilot::AutoControl(MovableObject *ob)
 	{
 
 		double value = acos(vect_local_forward.znorm() ^ ((ob->selectedItemToForward->vPos - ob->state.vPos).znorm()));
+		double value2 = atan(vect_local_forward.znorm() ^ ((ob->selectedItemToForward->vPos - ob->state.vPos).znorm()));
 		double distance = (ob->selectedItemToForward->vPos - ob->state.vPos).length();
 
+		if (value2 < 0 || value < 0) {
+			int a = 0;
+		}
 
-		if (value > 0 && value < PI/2) {
+		if (value > 0) {
 			if (distance > 300) {
-				ob->state.wheel_turn_angle = -1.0 * value / 30;
+				ob->state.wheel_turn_angle = -1.0 * value / 20;
 			}
 			else if (distance > 50) {
 				ob->state.wheel_turn_angle = -1.0 * value / 10;
 			}
 			else {
-				ob->state.wheel_turn_angle = -1.0 * value;
+				ob->state.wheel_turn_angle = -1.0 * value *1.1;
 			}
 		}
 		else {
 			if (distance > 300) {
-				ob->state.wheel_turn_angle = 1.0 * value / 30;
+				ob->state.wheel_turn_angle = 1.0 * value / 20;
 			}
 			else if (distance > 50) {
 				ob->state.wheel_turn_angle = 1.0 * value / 10;
@@ -114,20 +118,31 @@ void AutoPilot::AutoControl(MovableObject *ob)
 
 		
 		if (distance > 400) {
-			ob->F = ob->F_max/2;
+			ob->F = ob->F_max;
 			ob->breaking_degree = 0.0;
 		}
-		else if (distance > 100) {
-			ob->F = ob->F_max * 3 / 8;
+		else if (distance > 100 && distance < 400) {
+			ob->F = ob->F_max * 3 / 5;
 			ob->breaking_degree = 0.2;
 		}
+		else if (distance > 50 && distance < 100) {
+			ob->F = ob->F_max * 3 / 8;
+			ob->breaking_degree = 0.5;
+		}
 		else {
-			ob->F = ob->F_max * 3 / 10;
-			ob->breaking_degree = 0.29;
+			ob->F = ob->F_max * 3 / 8;
+			ob->breaking_degree = 0.3;
+		}
+
+		auto speed = ob->state.vV.length();
+		if (speed < 1) {
+			ob->F = ob->F_max;
+			ob->breaking_degree = 0.0;
 		}
 
 		if (ob->terrain->LevelOfWater(ob->state.vPos.x, ob->state.vPos.z) > ob->state.vPos.y) {
-			ob->F = ob->F_max / 2;
+			ob->F = ob->F_max;
+			ob->breaking_degree = 0.0;
 		}
 
 

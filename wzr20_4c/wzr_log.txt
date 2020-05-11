@@ -31,3 +31,12 @@ Koniec interakcji
 Koniec wczytywania danych o terrainie.
 Nowy obiekt: iID = 454
 Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 302
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 289
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 100
+Koniec interakcji

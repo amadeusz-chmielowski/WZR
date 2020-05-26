@@ -33,3 +33,8 @@
 
 #visual
 .vs
+
+#idea
+.idea
+out
+*/out

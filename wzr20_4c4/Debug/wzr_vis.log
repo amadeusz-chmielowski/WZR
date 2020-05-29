@@ -1,0 +1,28 @@
+﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  agents.cpp
+c:\users\amade\desktop\pg\wzr\wzr20_4c\objects.h(7): warning C4091: 'extern ': ignored on left of 'Terrain' when no variable is declared
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(17): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(28): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(75): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(97): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(100): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(103): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(108): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(111): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(114): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(126): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(134): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(156): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(202): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(203): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(206): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(240): warning C4244: 'initializing': conversion from 'long' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(241): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(212): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(251): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+c:\users\amade\desktop\pg\wzr\wzr20_4c\agents.cpp(261): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+  wzr_vis.vcxproj -> C:\Users\amade\Desktop\PG\WZR\wzr20_4c\Debug\wzr_vis.exe

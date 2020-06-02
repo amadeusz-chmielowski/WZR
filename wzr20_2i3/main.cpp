@@ -21,6 +21,7 @@ float test_scenario[][4] = { { 9.5, 110, 0, 0 }, { 5, 20, -0.25 / 8, 0 }, { 0.5,
 #include <iterator>
 #include <iostream>
 #include <fstream>
+#include <ctime>
 #include <map>
 
 #include "objects.h"
@@ -41,7 +42,10 @@ float fDt;                            // sredni czas pomiedzy dwoma kolejnymi cy
 long time_of_cycle, number_of_cyc = 0;   // zmienne pomocnicze potrzebne do obliczania fDt
 long time_start = clock();           // moment uruchomienia aplikacji 
 long time_last_send = 0;             // moment wys³ania ostatniej ramki  
-
+map<int, time_t> sys_times;
+map<int, double> difftime_;
+double biggest_delay = 1;
+time_t sys_time_other;
 multicast_net *multi_reciv;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
 multicast_net *multi_send;           //   -||-  wysylaniem komunikatow
 
@@ -69,7 +73,7 @@ struct Frame                                      // g³ówna struktura s³u¿¹ca do
 	int iID;                                      // identyfikator obiektu, którego 
 	int type;                                     // typ ramki: informacja o stateie, informacja o zamkniêciu, komunikat tekstowy, ... 
 	ObjectState state;                            // po³o¿enie, prêdkoœæ: œrodka masy + k¹towe, ...
-
+	time_t sys_time;
 	long sending_time;                            // tzw. znacznik czasu potrzebny np. do obliczenia opóŸnienia
 	int iID_receiver;                             // nr ID odbiorcy wiadomoœci, jeœli skierowana jest tylko do niego
 	int ID_team;
@@ -88,8 +92,13 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 	{
 		int frame_size = pmt_net->reciv((char*)&frame, sizeof(Frame));   // oczekiwanie na nadejœcie ramki 
 		ObjectState state = frame.state;
-		long diff = clock() - frame.sending_time;
-		double time_diff = diff / double(CLOCKS_PER_SEC);
+		time_t current_time = clock();
+		bool skip_frame = false;
+		//time(&current_time);
+		double diff__ = -100;
+		if (frame.iID == my_vehicle->iID) {
+			diff__ = (current_time - frame.sys_time) / CLOCKS_PER_SEC;
+		}
 		//fprintf(f, "odebrano stan iID = %d, ID dla mojego obiektu = %d\n", frame.iID, my_vehicle->iID);
 
 		// Lock the Critical section
@@ -107,23 +116,47 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 				network_vehicles[frame.iID] = ob;
 				//fprintf(f, "zarejestrowano %d obcy obiekt o ID = %d\n", iLiczbaCudzychOb - 1, CudzeObiekty[iLiczbaCudzychOb]->iID);
 			}
-			if (true) {
-				//state.vPos = ...
-				state.vPos = state.vPos + (state.vV*time_diff) + ((state.vA)*time_diff*time_diff / 4.0f);
-
-				//state.vV = ....
-				//state.vV = state.vV + state.vA*time_diff;
+			//to do sync
+			if (frame.iID != my_vehicle->iID) {
 
 
-				////state.qOrient = ....
-				state.qOrient = AsixToQuat((state.vV_ang*time_diff + state.vA_ang*time_diff*time_diff / 3.0f),
-					(state.vV_ang*time_diff + state.vA_ang*time_diff*time_diff / 3.0f).length()) * state.qOrient;
-
-				////state.vV_ang = ....
-				state.vV_ang = state.vV_ang + state.vA_ang * time_diff * 0.7;
+				bool in_map = false;
+				for (auto it = sys_times.begin(); it != sys_times.end(); ++it)
+				{
+					if (frame.iID == it->first) {
+						in_map = true;
+						difftime_[it->first] = (frame.sys_time - it->second) / CLOCKS_PER_SEC;
+						if (difftime_[it->first] > biggest_delay) {
+							skip_frame = true;
+							break;
+						}
+						fprintf(f, "id: %d diff: %lf\n", frame.iID, difftime_[it->first]);
+						it->second = frame.sys_time;
+						break;
+					}
+				}
+				if (!in_map) {
+					sys_times.insert(std::make_pair(frame.iID, frame.sys_time));
+					difftime_.insert(std::make_pair(frame.iID, -100.0));
+				}
 			}
+			if (skip_frame) {
+				fprintf(f, "Skipping frame");
+			}
+			else {
+				if (frame.iID_receiver == my_vehicle->iID) {
+					float time_to_proxy = difftime_[frame.iID];
+					my_vehicle->state.vPos = frame.state.vPos + (frame.state.vV*time_to_proxy) + ((frame.state.vA)*time_to_proxy*time_to_proxy / 2.0f);
 
-			network_vehicles[frame.iID]->StateUpdate(state);             // aktualizacja stateu obiektu obcego 	
+					////veh->state.vV = ....
+					my_vehicle->state.vV = frame.state.vV + frame.state.vA*time_to_proxy*0.5;
+
+
+					////veh->state.vV_ang = ....
+					my_vehicle->state.vV_ang = frame.state.vV_ang + frame.state.vA_ang * time_to_proxy * 0.3;
+				}
+				network_vehicles[frame.iID]->StateUpdate(state);             // aktualizacja stateu obiektu obcego 	
+			}
 		}
 		//Release the Critical section
 		LeaveCriticalSection(&m_cs);                                     // wyjœcie ze œcie¿ki krytycznej
@@ -226,7 +259,10 @@ void VirtualWorldCycle()
 	//if ((float)(clock() - time_last_send) / CLOCKS_PER_SEC >= 0.2 + 30 * (time_from_start_in_s < 30))
 	if ((float)(clock() - time_last_send) / CLOCKS_PER_SEC >= 1.0)
 	{
+		time_t sys_time_ = clock();
+		//time(&sys_time_);
 		Frame frame;
+		frame.sys_time = sys_time_;
 		frame.state = my_vehicle->State();                   // stan w³asnego obiektu 
 		frame.iID = my_vehicle->iID;
 		frame.sending_time = clock();
@@ -234,6 +270,15 @@ void VirtualWorldCycle()
 		time_last_send = clock();
 
 		number_of_send_trials++;
+
+		for (auto it = network_vehicles.begin(); it != network_vehicles.end(); ++it) {
+			Frame frame;
+			frame.sys_time = clock();
+			frame.state = it->second->state;
+			frame.iID = my_vehicle->iID;
+			frame.iID_receiver = it->second->iID;
+			multi_send->send((char*)&frame, sizeof(Frame));
+		}
 	}
 
 
@@ -262,6 +307,9 @@ void VirtualWorldCycle()
 
 		////veh->state.vV_ang = ....
 		veh->state.vV_ang = veh->state.vV_ang + veh->state.vA_ang * fDt;
+
+
+
 
 	}
 	//Release the Critical section

@@ -384,3 +384,150 @@ my_vehicle->iID = 704
 poczatek interakcji
 my_vehicle->iID = 41
 Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 320
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+my_vehicle->iID = 334
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 8.268[m]  œr.ró¿n.k¹t. = 3.793[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 814
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+Po czasie 35.01[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 9.502[m]  œr.ró¿n.k¹t. = 4.351[st]
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+id: 0 diff: 0.000000
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 163
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+my_vehicle->iID = 334
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 6.214[m]  œr.ró¿n.k¹t. = 3.602[st]
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 1.000000
+id: 199 diff: 5.000000
+id: 199 diff: 1.000000
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 18
+poczatek interakcji
+my_vehicle->iID = 41
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 7.886[m]  œr.ró¿n.k¹t. = 3.957[st]
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 893
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+my_vehicle->iID = 334
+id: 919 diff: 1001.000000
+id: 919 diff: 1004.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1002.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1002.000000
+id: 919 diff: 1002.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1002.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1002.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1008.000000
+id: 919 diff: 1008.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1004.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1004.000000
+id: 919 diff: 1009.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1004.000000
+id: 919 diff: 1006.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 6.905[m]  œr.ró¿n.k¹t. = 5.845[st]
+id: 919 diff: 1011.000000
+id: 919 diff: 1001.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1014.000000
+id: 919 diff: 1006.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1000.000000
+id: 919 diff: 1004.000000
+id: 919 diff: 1002.000000
+id: 919 diff: 3232.000000
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 162
+poczatek interakcji
+my_vehicle->iID = 41
+Koniec interakcji

@@ -1,0 +1,451 @@
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 721
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 8.489[m]  œr.ró¿n.k¹t. = 4.063[st]
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+id: 766 diff: 1.000000
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 164
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 11.123[m]  œr.ró¿n.k¹t. = 4.626[st]
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+id: 170 diff: 1.000000
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 170
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+id: 164 diff: 1.000000
+Po czasie 35.01[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 6.823[m]  œr.ró¿n.k¹t. = 2.858[st]
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 964
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 974 diff: 0.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 0.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 494.796[m]  œr.ró¿n.k¹t. = 5.038[st]
+id: 974 diff: 1.000000
+id: 974 diff: 1.000000
+id: 974 diff: 0.000000
+id: 974 diff: 1.000000
+Skipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 974
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 0.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+id: 964 diff: 1.000000
+id: 964 diff: 0.000000
+id: 964 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 707.548[m]  œr.ró¿n.k¹t. = 63.134[st]
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 503
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 467 diff: 1.000000
+id: 467 diff: 0.000000
+id: 467 diff: 1.000000
+id: 467 diff: 0.000000
+id: 467 diff: 1.000000
+id: 467 diff: 0.000000
+id: 467 diff: 1.000000
+id: 467 diff: 0.000000
+id: 467 diff: 1.000000
+id: 467 diff: 1.000000
+id: 467 diff: 0.000000
+id: 467 diff: 0.000000
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 467
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 503 diff: 0.000000
+id: 503 diff: 1.000000
+id: 503 diff: 0.000000
+id: 503 diff: 1.000000
+id: 503 diff: 1.000000
+id: 503 diff: 0.000000
+id: 503 diff: 1.000000
+id: 503 diff: 1.000000
+id: 503 diff: 0.000000
+id: 503 diff: 0.000000
+id: 503 diff: 1.000000
+id: 503 diff: 1.000000
+Koniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 836
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 9.664[m]  œr.ró¿n.k¹t. = 2.922[st]
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+id: 846 diff: 1.000000
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 846
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+id: 836 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 9.143[m]  œr.ró¿n.k¹t. = 2.652[st]
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 77
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+my_vehicle->iID = 334
+my_vehicle->iID = 500
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 7.474[m]  œr.ró¿n.k¹t. = 4.805[st]
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+id: 129 diff: 1.000000
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 129
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+id: 77 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 9.568[m]  œr.ró¿n.k¹t. = 2.726[st]
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 534
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+id: 488 diff: 1.000000
+Skipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping frameSkipping framePo czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 6.953[m]  œr.ró¿n.k¹t. = 3.139[st]
+Skipping frameSkipping frameSkipping frameKoniec interakcji
+height_map planet_terrain: number_of_rows = 235, number_of_columns = 231
+my_vehicle->iID = 488
+poczatek interakcji
+my_vehicle->iID = 41
+my_vehicle->iID = 467
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+Po czasie 35.00[s]  œr.czêstoœæ = 1.00[r/s]  œr.odl = 9.638[m]  œr.ró¿n.k¹t. = 4.935[st]
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+id: 534 diff: 1.000000
+Skipping frameSkipping frameSkipping frameKoniec interakcji

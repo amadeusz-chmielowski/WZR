@@ -2,7 +2,7 @@
 #include <time.h>
 
 #include "agents.h"
-
+//#define ABS
 
 AutoPilot::AutoPilot()
 {
@@ -15,6 +15,32 @@ Vector3 removeHeight(Vector3 vect) {
 
 float sgn(float value) {
 	return (0.0F < value) - (value < 0.0F);
+}
+
+int getSign(Vector3 v1, Vector3 v2) {
+#ifdef ABS
+	auto value1 = abs(v1.z * v2.x);
+	auto value2 = abs(v2.z * v1.x);
+	if (value1 > value2) {
+		return -1;
+	}
+	else
+	{
+		return 1;
+	}
+#else
+	auto value1 = v1.z * v2.x;
+	auto value2 = v2.z * v1.x;
+	if (value1 > value2) {
+		return -1;
+	}
+	else
+	{
+		return 1;
+	}
+#endif // ABS
+
+
 }
 
 void AutoPilot::AutoControl(MovableObject *ob)
@@ -84,55 +110,52 @@ void AutoPilot::AutoControl(MovableObject *ob)
 	else
 	{
 
-		double value = acos(vect_local_forward.znorm() ^ ((ob->selectedItemToForward->vPos - ob->state.vPos).znorm()));
-		double value2 = atan(vect_local_forward.znorm() ^ ((ob->selectedItemToForward->vPos - ob->state.vPos).znorm()));
+		double turn = vect_local_forward.znorm() ^ ((ob->selectedItemToForward->vPos - ob->state.vPos).znorm());
+		double value = acos(turn);
+		//double value2 = atan(vect_local_forward.znorm() ^ ((ob->selectedItemToForward->vPos - ob->state.vPos).znorm()));
 		double distance = (ob->selectedItemToForward->vPos - ob->state.vPos).length();
 
-		if (value2 < 0 || value < 0) {
-			int a = 0;
-		}
+		int direction = getSign(ob->state.vPos, ob->selectedItemToForward->vPos);
 
-		if (value > 0) {
-			if (distance > 300) {
-				ob->state.wheel_turn_angle = -1.0 * value / 20;
-			}
-			else if (distance > 50) {
-				ob->state.wheel_turn_angle = -1.0 * value / 10;
-			}
-			else {
-				ob->state.wheel_turn_angle = -1.0 * value *1.1;
-			}
+		if (distance > 300) {
+			ob->state.wheel_turn_angle = direction * value / 5;
+		}
+		else if (distance > 50) {
+			ob->state.wheel_turn_angle = direction * value / 2;
 		}
 		else {
-			if (distance > 300) {
-				ob->state.wheel_turn_angle = 1.0 * value / 20;
-			}
-			else if (distance > 50) {
-				ob->state.wheel_turn_angle = 1.0 * value / 10;
-			}
-			else {
-				ob->state.wheel_turn_angle = 1.0 * value;
-			}
+			ob->state.wheel_turn_angle = direction * value *1.1;
 		}
 
 
-		
+
 		if (distance > 400) {
 			ob->F = ob->F_max;
 			ob->breaking_degree = 0.0;
 		}
-		else if (distance > 100 && distance < 400) {
-			ob->F = ob->F_max * 3 / 5;
-			ob->breaking_degree = 0.2;
-		}
-		else if (distance > 50 && distance < 100) {
-			ob->F = ob->F_max * 3 / 8;
-			ob->breaking_degree = 0.5;
-		}
 		else {
-			ob->F = ob->F_max * 3 / 8;
-			ob->breaking_degree = 0.3;
+			if (distance > 200 && distance < 300) {
+				ob->F = ob->F_max * 3 / 5;
+				ob->breaking_degree = 0.15;
+			}
+			else if (distance > 100 && distance <= 200) {
+				ob->F = ob->F_max * 3 / 5;
+				ob->breaking_degree = 0.2;
+			}
+			else if (distance > 50 && distance <= 100 ) {
+				ob->F = ob->F_max * 3 / 7;
+				ob->breaking_degree = 0.5;
+			}
+			else if(distance < 50){
+				ob->F = ob->F_max * 3 / 8;
+				ob->breaking_degree = 0.5;
+			}
+			else {
+				ob->F = ob->F_max * 3 / 5;
+				ob->breaking_degree = 0.2;
+			}
 		}
+
 
 		auto speed = ob->state.vV.length();
 		if (speed < 1) {

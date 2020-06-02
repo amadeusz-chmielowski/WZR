@@ -40,3 +40,42 @@ Koniec interakcji
 Koniec wczytywania danych o terrainie.
 Nowy obiekt: iID = 100
 Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 505
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 641
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 115
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 823
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 983
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 15
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 246
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 416
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 632
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 37
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 500
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 692
+Koniec interakcji
+Koniec wczytywania danych o terrainie.
+Nowy obiekt: iID = 255
+Koniec interakcji

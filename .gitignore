@@ -33,6 +33,10 @@
 
 #visual
 .vs
+*.pdb
+*.idb
+*.tlog
+*.log
 
 #idea
 .idea

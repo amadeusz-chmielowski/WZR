@@ -2,7 +2,7 @@
 #include <time.h>
 
 #include "agents.h"
-//#define ABS
+#define ABS
 
 AutoPilot::AutoPilot()
 {

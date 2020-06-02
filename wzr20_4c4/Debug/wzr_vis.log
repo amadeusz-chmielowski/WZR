@@ -23,5 +23,4 @@ c:\users\amade\desktop\pg\wzr\wzr\wzr20_4c4\agents.cpp(274): warning C4996: 'spr
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
 c:\users\amade\desktop\pg\wzr\wzr\wzr20_4c4\agents.cpp(284): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
-agents.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   wzr_vis.vcxproj -> C:\Users\amade\Desktop\PG\WZR\WZR\wzr20_4c4\Debug\wzr_vis.exe
